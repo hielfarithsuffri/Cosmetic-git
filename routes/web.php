@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\StripeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,12 +31,16 @@ Route::get('/redirect', [HomeController::class, 'redirect']);
 Route::get('/product_detail/{id}', [HomeController::class, 'product_detail']);
 Route::get('/show_cart', [HomeController::class, 'show_cart'])->name('show_cart');
 Route::get('/delete_cart/{id}', [HomeController::class, 'delete_cart']);
-Route::get('/stripe/{totalprice}', [HomeController::class, 'stripe']);
 Route::post('/add_cart/{id}', [HomeController::class, 'add_cart']);
-Route::post('stripe',[HomeController::class,'stripePost'])->name('stripe.post');
 
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
+Route::get('/checkout', [StripeController::class, 'checkout'])->name('checkout');
+Route::post('/session', [StripeController::class,'session'])->name('session');
+Route::get('/success', [StripeController::class,'success'])->name('success');
 
 
 Route::get('/edit_category/{id}', [AdminController::class, 'edit_category']);
