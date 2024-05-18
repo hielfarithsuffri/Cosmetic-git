@@ -8,6 +8,12 @@ use App\Models\User;
 use App\Models\Products;
 use App\Models\Cart;
 use Illuminate\Support\Facades\Log;
+
+use Session;
+
+use Stripe;
+
+
 class HomeController extends Controller
 {
     public function index()
@@ -91,6 +97,27 @@ class HomeController extends Controller
             return redirect('show_cart');
 
     }
+
+    public function stripe($totalprice)
+    {
+        return view('home.stripe', compact('totalprice'));
+    }
+
+    public function stripePost(Request $request)
+    {
+        Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+        Stripe\Charge::create ([
+                "amount" => 100 * 100,
+                "currency" => "usd",
+                "source" => $request->stripeToken,
+                "description" => "Thanks for the payment" 
+        ]);
+        Session::flash('success', 'Payment successful!');
+        return back();
+
+    }
+
+
 
     
 

@@ -12,7 +12,7 @@ body {
 
 
 .layout_padding {
-  padding: 70px 0;
+  padding: 20px 0;
 }
 
 .layout_padding2 {
@@ -56,10 +56,11 @@ h2 {
 .heading_container h2 {
     position: relative;
     margin-bottom: 0;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+/* 
 .heading_container h2::after {
     content: "";
     display: block;
@@ -67,7 +68,7 @@ h2 {
     height: 5px;
     background: #f7444e;
     margin: 10px auto 10px;
-}
+} */
 
 .heading_container h2 span {
   color: #f7444e;
@@ -83,6 +84,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  
 }
 
 a,
@@ -124,7 +126,7 @@ a:focus {
 /*TESTING*/
 .header_section {
   padding-top: 35px;
-
+  border-bottom: 3px solid black;
   min-height: 60px; /* Adjust as needed */
   display: flex;
   flex-direction: column;
@@ -392,27 +394,37 @@ a:focus {
 
 .slider_bg_box img {
   width: 100%;
-  height: 50vh;
+ 
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top right;
      object-position: top right;
 }
 
+@media (max-width: 768px) {
+  .slider_section .carousel-inner .carousel-item img {
+    height: auto;
+    max-height: 300px; /* Adjust as needed */
+    object-fit: cover;
+  }
+}
+
 .product_section .heading_container {
   margin-bottom: 20px;
+  
 }
 
 .product_section .box {
     position: relative;
-    margin-top: 25px;
+    margin-top: 0px;
     padding: 35px 35px;
-    background-color: #f7f8f9;
+    /* background-color: #f7f8f9; */
+    background-color: white;
     -webkit-transition: all .3s;
     transition: all .3s;
     overflow: hidden;
-    box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2);
-    border: solid #fff 10px;
+    /* box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2); */
+    /* border: solid #fff 10px; */
 }
 
 .product_section .box .img-box {
@@ -430,7 +442,7 @@ a:focus {
 
 .product_section .box .img-box img {
   max-width: 100%;
-  max-height: 160px;
+  max-height: 200px;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -611,12 +623,11 @@ a:focus {
   color: #f7444e;
 }
 
-.why_section .box {
+.promo .box {
     text-align: center;
-    margin-top: 45px;
     background-color: #002c3e;
-    padding: 45px 50px;
-    border-radius: 5px;
+    
+    border-radius: 0;
     color: #ffffff;
 }
 
@@ -629,11 +640,13 @@ a:focus {
     display: none;
 }
 
-.why_section .box .img-box {
-  margin-bottom: 15px;
+.promo .img-box img {
+  height: 200px; /* Set the desired height */
+  object-fit: cover; /* This ensures the image covers the box without distortion */
+  width: 100%; /* Ensures the image takes the full width of the container */
 }
 
-.why_section .box .img-box svg {
+.promo .box .img-box svg {
   width: 55px;
   height: auto;
   fill: #ffffff;
@@ -1220,3 +1233,128 @@ https://preview.hasthemes.com/xoss-preview/xoss/index.html
   max-width: 100%; /* Ensure the logo image doesn't overflow */
 }
 
+.zero-padding{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.product-details1 p {
+  display: block;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.product-details2{
+  display: inline-block;
+  margin: 0;
+}
+
+
+
+
+
+.subscribe_section2 {
+  background: white; /* Set the background to white */
+  color: white;
+  padding:0; /* Optional: add padding to the section */
+  border-top: 1px solid #000; /* Add a thin line at the top */
+  border-bottom: 1px solid #000; 
+}
+
+.subscribe_section2 .container-fluid,
+.subscribe_section2 .box,
+.subscribe_section2 .row {
+  position: relative;
+  z-index: 2;
+}
+
+.subscribe_section2 .col-md-4 {
+  position: relative;
+  padding: 0; /* Remove any padding to prevent spacing issues */
+}
+
+.subscribe_section2 .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.subscribe_section2 .subscribe_form {
+  position: relative; /* Ensure the form is positioned relative to its parent */
+  max-width: 400px;
+  height: 300px; /* Set a height for the newsletter box */
+  margin-left: auto; /* Align the form to the right within the container */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for the form */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+  z-index: 2; /* Ensure the form is above the background image */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+  .subscribe_section2 .subscribe_form,
+  .subscribe_section2 .img-container {
+    margin: 0 auto; /* Center the elements horizontally */
+    max-width: 100%;
+  }
+
+  .subscribe_section2 .img-container img {
+    transform: scale(0.8); /* Reduce the size and keep it flipped */
+  }
+
+  .subscribe_section2 .subscribe_form {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+
+
+
+.widget_menu {
+  margin-bottom: 0;
+}
+
+.image_space {
+  height: 10px; /* Adjust the height for the image space */
+}
+
+.widget_menu h3 {
+  margin-bottom: 0;
+}
+
+/* Adjust the pagination background color */
+.pagination {
+  background-color: white; /* Light gray background */
+}
+
+/* Adjust the border color of pagination items */
+.pagination .page-item {
+  border: 1px solid black; /* Primary blue border */
+}
+
+
+/* Adjust the color of pagination links */
+.pagination .page-link {
+  color: black; /* Primary blue text color */
+}
+
+/* Adjust the background color of active pagination link */
+.pagination .page-item.active .page-link {
+  background-color: black; /* Primary blue background */
+  border-color: #000000; /* Primary blue border */
+  color: white; /* White text color */
+}
+
+/* Adjust the hover effects for pagination links */
+.pagination .page-link:hover {
+  background-color: white; /* Darker blue background on hover */
+  border-color: white; /* Darker blue border on hover */
+  color: red; /* White text color on hover */
+}
+
+/* Adjust the color of disabled pagination links */
+.pagination .page-link.disabled {
+  color: black; /* Gray text color for disabled links */
+}

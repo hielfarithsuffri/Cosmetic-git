@@ -20,42 +20,17 @@
       <link href="home/css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="home/css/responsive.css" rel="stylesheet" />
+      
    </head>
    <body>
-      
-   
          @include('home.loginheader')
-         <!-- header section strats -->
          @include('home.header')
-         <!-- end header section -->
-         <!-- slider section -->
-   
       <div class="main-content content-padding-top" style="margin-top: 100px;padding-bottom: 100px">
       @include('home.slider')
-         <!-- end slider section -->
-      
-      <!-- why section -->
       @include('home.why')
-      <!-- end why section -->
-      
-      <!-- arrival section -->
-      @include('home.arrival')
-      <!-- end arrival section -->
-      
-      <!-- product section -->
       @include('home.product')
-      <!-- end product section -->
-
-      <!-- subscribe section -->
       @include('home.subscribe')
-      <!-- end subscribe section -->
-      <!-- client section -->
-      @include('home.client')
-      <!-- end client section -->
-      <!-- footer start -->
       @include('home.footer')
-      <!-- footer end -->
-      
          <div class="cpy_">
             <p>© 2024 All Rights Reserved By<br>
             </p>

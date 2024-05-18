@@ -6236,10 +6236,11 @@ a.close.disabled {
 
 .carousel-item {
   position: relative;
-  height: 50vh;
+  height: 60vh;
   display: none;
   width: 100%;
-  padding-top: 56.25%;
+  /* padding-top: 56.25%; */
+  padding-top: 30%;
   float: left;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
@@ -6248,6 +6249,15 @@ a.close.disabled {
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
+
+@media (max-width: 1200px) {
+  .carousel-item {
+    height: 40vh;
+    max-height: 300px; /* Adjust as needed */
+    object-fit: cover;
+  }
+}
+
 .carousel-item img {
   position: absolute;
   top: 0;

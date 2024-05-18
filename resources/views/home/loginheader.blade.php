@@ -1,6 +1,6 @@
 
-<header id="header1">
-    <div class="container2" style="background-color: black">
+<header id="header1"style="background-color: black">
+    <div class="container" >
         <nav class="navbar navbar-expand-sm2 custom_nav-container">
                 <ul class="navbar-nav ml-auto" style="padding-top:0;">
                     @if (Route::has('login'))

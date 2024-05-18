@@ -30,7 +30,9 @@ Route::get('/redirect', [HomeController::class, 'redirect']);
 Route::get('/product_detail/{id}', [HomeController::class, 'product_detail']);
 Route::get('/show_cart', [HomeController::class, 'show_cart'])->name('show_cart');
 Route::get('/delete_cart/{id}', [HomeController::class, 'delete_cart']);
+Route::get('/stripe/{totalprice}', [HomeController::class, 'stripe']);
 Route::post('/add_cart/{id}', [HomeController::class, 'add_cart']);
+Route::post('stripe',[HomeController::class,'stripePost'])->name('stripe.post');
 
 
 

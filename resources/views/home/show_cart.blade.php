@@ -69,7 +69,7 @@
                     <h1> Total Price: IND {{$totalprice}}</h1>
                 </div>
                 <div class="text-right">
-                    <a href="{{url('order_cart')}}"><button class="btn btn-primary">Continue To Payment</button></a>
+                    <a href="{{ url('/stripe', $totalprice) }}"><button class="btn btn-primary">Continue To Payment</button></a>
                 </div>
                 
             </div>

@@ -1,14 +1,14 @@
 <section class="product_section layout_padding">
          <div class="container">
-            <div class="heading_container heading_center">
+            <div class="heading_container heading_center" style="margin-bottom:0px">
                <h2>
-                  Our <span>New Products</span>
+                  Fast Selling Product
                </h2>
             </div>
             <div class="row">
 
                @foreach ($product as $products)
-               <div class="col-sm-6 col-md-4 col-lg-4">
+               <div class="col-sm-6 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
@@ -34,33 +34,23 @@
                      <div class="img-box">
                         <img src="product/{{$products->image}}">
                      </div>
-                     <div class="detail-box">
-                        <h5>
-                           {{$products->title}}
-                        </h5>
+                     <div class="product-details" style="padding-left:20px" >
+                        <p style="margin-bottom: 0;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">{{$products->category}}</p>
+                        <p style="margin-bottom: 0; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">{{$products->title}}</p>
 
-                        @if($products->discount_price!=null)
-                        <h6 style="color: red;">
-                        IDR {{$products->discount_price}}
-                        </h6>
-
-                        <h6 style="text-decoration: line-through";>
-                        IDR {{$products->price}}
-                        </h6>
-                        @else
-
-                        <h6>
-                        IDR {{$products->price}}
-                        </h6>
-
-                        @endif
+                           @if($products->discount_price != null)
+                              <p class="product-details2" style="text-decoration: line-through; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">IDR {{$products->price}}</p>
+                              <p class="product-details2" style="color: red; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">IDR {{$products->discount_price}}</p>
+                           @else
+                              <p>IDR {{$products->price}}</p>
+                           @endif
                         
                      </div>
                   </div>
                </div>
                @endforeach
 
-               <span style="padding-top: 20px";>
+               <span>
                {!! $product->withQueryString()->Links('pagination::bootstrap-5') !!}
                
                </span>
