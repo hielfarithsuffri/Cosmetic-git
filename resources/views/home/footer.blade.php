@@ -1,4 +1,4 @@
-<footer style="position: relative; bottom: 0;width: 100%; padding: 20px 0;">
+<footer style="position: relative; bottom: 0;width: 100%; padding: 20px 0; background-color:white;">
          <div class="container">
             <div class="row">
                <div class="col-md-4">

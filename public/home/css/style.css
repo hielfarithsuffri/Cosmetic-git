@@ -126,7 +126,7 @@ a:focus {
 /*TESTING*/
 .header_section {
   padding-top: 35px;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
   min-height: 60px; /* Adjust as needed */
   display: flex;
   flex-direction: column;
@@ -847,7 +847,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #002c3e;
+  background-color: #000000;
   color: #ffffff;
   padding-top: 70px;
 }
@@ -1357,4 +1357,8 @@ https://preview.hasthemes.com/xoss-preview/xoss/index.html
 /* Adjust the color of disabled pagination links */
 .pagination .page-link.disabled {
   color: black; /* Gray text color for disabled links */
+}
+
+.navbar-nav-new .dropdown:hover .dropdown-menu {
+  display: block;
 }

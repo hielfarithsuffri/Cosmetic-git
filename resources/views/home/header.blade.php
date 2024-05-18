@@ -7,27 +7,58 @@
             </button>
             <div class="collapse navbar-collapse-new" id="navbarSupportedContent">
                 <ul class="navbar-nav-new navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{url('redirect')}}">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MakeUp</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Face</a></li>
+                            <li><a href="#">Eyes</a></li>
+                            <li><a href="#">Lips</a></li>
+                            <li><a href="#">Nails</a></li>
+                            <li><a href="#">Makeup Remover</a></li>
+                            <li><a href="#">Brushes</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Pages <span class="caret"></span></a>
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SkinCare</a>
                         <ul class="dropdown-menu">
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="testimonial.html">Testimonial</a></li>
+                            <li><a href="#">Cleanser</a></li>
+                            <li><a href="#">Moisturizer</a></li>
+                            <li><a href="#">Toner</a></li>
+                            <li><a href="#">Mask & Treatment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BodyCare</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Bath & Shower</a></li>
+                            <li><a href="#">Moisturizers</a></li>
+                            <li><a href="#">Grooming</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hair</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Shampoo & Conditioner</a></li>
+                            <li><a href="#">Hair Treatment</a></li>
+                            <li><a href="#">Hair Tool</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fragrance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Perfume</a></li>
+                            <li><a href="#">Eau de Perfume</a></li>
+                            <li><a href="#">Eau de Toilette</a></li>
+                            <li><a href="#">Eau de Cologne</a></li>
+                            <li><a href="#">Perfume Oil</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="product.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog_list.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="#" style="color: red;">Sale</a>
                     </li>
                     <form class="form-inline">
-                        <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                        <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
                     </form>
