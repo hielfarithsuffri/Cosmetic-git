@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Products;
 use LDAP\Result;
+use App\Models\Order;
 
 class AdminController extends Controller
 {
@@ -104,6 +105,12 @@ class AdminController extends Controller
         
         $product->save();
         return redirect()->back()->with('message','Product Updated');
+    }
+
+    public function order()
+    {
+        $orders = Order::all();
+        return view('admin.order', ['orders' => $orders]);
     }
         
 }

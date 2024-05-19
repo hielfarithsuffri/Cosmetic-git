@@ -34,9 +34,7 @@ Route::get('/delete_cart/{id}', [HomeController::class, 'delete_cart']);
 Route::post('/add_cart/{id}', [HomeController::class, 'add_cart']);
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/checkout', [StripeController::class, 'checkout'])->name('checkout');
 Route::post('/session', [StripeController::class,'session'])->name('session');
@@ -50,7 +48,7 @@ Route::get('/delete_category/{id}', [AdminController::class, 'delete_category'])
 Route::get('/delete_product/{id}', [AdminController::class, 'delete_product']);
 Route::get('/view_product', [AdminController::class, 'view_product']);
 Route::get('/show_product', [AdminController::class, 'show_product']);
-
+Route::get('/order', [AdminController::class, 'order']);
 
 Route::post('/add_category', [AdminController::class, 'add_category']);
 Route::post('/add_product', [AdminController::class, 'add_product']);

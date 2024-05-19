@@ -33,7 +33,7 @@
                         Order Invoice
                     </div>
                     <div class="card-body">
-                        <table id="cart" class="table table-hover table-condensed">
+                        <table id="order" class="table table-hover table-condensed">
                             <thead>
                                 <tr>
                                     <th style="width:50%">Product</th>
@@ -44,21 +44,21 @@
                             </thead>
                             <tbody>
                                 <?php $totalprice = 0 ?>
-                                @foreach($cart as $cartItem)
+                                @foreach($orders as $order)
                                 <tr>
                                     <td data-th="Product">
                                         <div class="row">
-                                            <div class="col-sm-3 hidden-xs"><img src="/product/{{ $cartItem->image }}" class="img-responsive img_deg" /></div>
+                                            <div class="col-sm-3 hidden-xs"><img src="/product/{{ $order->image }}" class="img-responsive img_deg" /></div>
                                             <div class="col-sm-9">
-                                                <h4 class="nomargin">{{ $cartItem->product_title }}</h4>
+                                                <h4 class="nomargin">{{ $order->product_title }}</h4>
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-th="Price">${{ $cartItem->price }}</td>
-                                    <td data-th="Quantity">{{ $cartItem->quantity }}</td>
-                                    <td data-th="Subtotal" class="text-center">${{ $cartItem->price * $cartItem->quantity }}</td>
+                                    <td data-th="Price">${{ $order->price }}</td>
+                                    <td data-th="Quantity">{{ $order->quantity }}</td>
+                                    <td data-th="Subtotal" class="text-center">${{ $order->price * $order->quantity }}</td>
                                 </tr>
-                                <?php $totalprice += $cartItem->price * $cartItem->quantity ?>
+                                <?php $totalprice += $order->price * $order->quantity ?>
                                 @endforeach
                             </tbody>
                             <tfoot>

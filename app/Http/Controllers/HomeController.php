@@ -9,6 +9,7 @@ use App\Models\Products;
 use App\Models\Cart;
 use Illuminate\Support\Facades\Log;
 
+
 use Session;
 
 use Stripe;
@@ -25,6 +26,7 @@ class HomeController extends Controller
     {
         // Retrieve the 'usertype' attribute from the authenticated user
         $usertype = Auth::user()->usertype;
+        
 
         // Debugging statement to inspect the value of $usertype
     
