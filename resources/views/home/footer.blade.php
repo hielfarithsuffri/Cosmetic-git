@@ -21,7 +21,7 @@
                               <div class="widget_menu">
                                  <h3>About Us</h3>
                                  <ul>
-                                    <li><a href="#">About Sephora</a></li>
+                                    <li><a href="#">About</a></li>
                                     <li><a href="#">Careers</a></li>
                                     <li><a href="#">Privacy Policy</a></li>
                                     <li><a href="#">Terms of Use</a></li>

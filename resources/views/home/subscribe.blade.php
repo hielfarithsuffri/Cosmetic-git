@@ -4,7 +4,7 @@
          <div class="row justify-content-center align-items-center">
             <div class="col-md-6 d-none d-md-block">
                <div class="img-container">
-                  <img src="images/newsletter2.png" alt="Decorative Image" class="img-fixed">
+                  <img src="images/newsletter2.png" alt="Decorative Image" style="width: 555px">
                </div>
             </div>
             <div class="col-md-6">

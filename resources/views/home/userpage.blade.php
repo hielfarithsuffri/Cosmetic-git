@@ -32,7 +32,7 @@
       @include('home.subscribe')
       @include('home.footer')
          <div class="cpy_">
-            <p>© 2024 All Rights Reserved By<br>
+            <p>© 2024 All Rights Reserved<br>
             </p>
          </div>
       </div>
