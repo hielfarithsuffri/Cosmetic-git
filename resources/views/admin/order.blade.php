@@ -27,13 +27,14 @@
         text-align: center;
         font-size: 25px;
         font-weight: bold;
+        color:black;
       }
       .center
         {
             margin: auto;
             width: 50%;
             margin-top: 30px;
-            border: 2px solid white;
+            border: 2px solid #C0C0C0;
             padding: 10px;
         }
 
@@ -41,19 +42,24 @@
             text-align: center;
             font-size: 40px;
             padding-top: 20px;
+            color: black;
         }
 
         .img_size{
-            width: 150px;
-            height: 150px;
+            width: 40px;
+            height: 40px;
         }
 
         .th_color{
-            background-color: #333333;
+            background-color: #C0C0C0;
+            font-size: 15px;
         }
 
         .th_design{
-            padding: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: black;
+            font-size: 15px;
         }
     </style>
   </head>

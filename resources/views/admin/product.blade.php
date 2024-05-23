@@ -30,6 +30,7 @@
         .font_size{
             font-size: 40px;
             padding-bottom: 40px;
+            color: black;
         }
         .text_color{
             color: black;
@@ -43,6 +44,7 @@
 
         .div_design{
             padding-bottom: 15px;
+            color: black;
         }
         
     </style>

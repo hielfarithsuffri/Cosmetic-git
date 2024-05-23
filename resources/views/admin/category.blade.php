@@ -30,6 +30,7 @@
         .h2font{
             font-size: 40px;
             padding-bottom: 40px;
+            color: black;
         }
     
         .input_color{
@@ -42,7 +43,12 @@
             padding: 10px;
             text-align: center;
             margin-top: 30px;
-            border: 3px solid white;
+            border: 3px solid #C0C0C0;
+            color: black;
+        }
+
+        .header_color{
+            background-color: #C0C0C0;
         }
     </style>
   </head>
@@ -75,8 +81,8 @@
 
                     </div>
                         <table class="center">
-                            <tr>
-                                <th>Category Name</th>
+                            <tr class="header_color">
+                                <th >Category Name</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
