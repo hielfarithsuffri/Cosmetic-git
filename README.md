@@ -1,66 +1,29 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+this is my current project where my boss allow me to put it on public, it is still on fundamental phase to make e-commerce website.
+if it is unavailable to download, please refer below,
+Thank you :)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+Ecommerce portal for cosmetic
+1. Buy n puchase online ✅ - complete full flow for customer, limit for demonstration only
+2. Payment gateway ✅ - only for demo with stripe account, the only testing acc allowed is Doku gateway for indonesian market.. Tp i have yet to make Doku sandbox transaction sbb xde org buat dalam git community, kene build from scratch manually ikot website Doku
+3. Product cataloque ✅ - limited database
+4. Inventory syatem✅ - database linked with admin acc and homepage product listing (limited to only 3 until further meeting)
+5. Advertisement - only made UI static, admin xde control to change lagi unless hardcode (require amendment, till further meeting)
+6. Reports n statistic - not yet, database x lengkap or database still incomplete with insufficient data,  should be available in admin dashboard but on hold (apexchart)
+7. 
+![image](https://github.com/hielfarithsuffri/Cosmetic-git/assets/169738906/371f3b77-954a-4f8d-9119-278650268f31)
+main UI homepage
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![image](https://github.com/hielfarithsuffri/Cosmetic-git/assets/169738906/9ef19904-b202-4e5e-8baf-42c22d4cc37c)
+user cart after add item
+![image](https://github.com/hielfarithsuffri/Cosmetic-git/assets/169738906/358a2c94-6005-4fe7-b07c-b440d4b5215c)
+stripe demo, yang ni dia tulis dollar sebab mock xde IDR.. Doku onhold
+![image](https://github.com/hielfarithsuffri/Cosmetic-git/assets/169738906/1cf2ff08-a7c0-4bbd-9b0b-ebd683203d5f)
+customer invoice webpage, onhold auto generating email or pdf generation
+![image](https://github.com/hielfarithsuffri/Cosmetic-git/assets/169738906/274080ca-3730-423c-81b4-e73c38751349)
+product item, linked with homepage to show product (3 listed item in main UI)
+![image](https://github.com/hielfarithsuffri/Cosmetic-git/assets/169738906/56055dd9-ed84-4715-82ef-06c50a7edb0c)
+order webpage for admon to note paid customer to proceed
+![image](https://github.com/hielfarithsuffri/Cosmetic-git/assets/169738906/15a6b180-7695-411d-8e56-19b117202d24)
+database required to current functionality
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
