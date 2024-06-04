@@ -1,3 +1,4 @@
+Note: Project on hold, pending with consultant to intergrate with SEO (OpenCart)
 this is my current project where my boss allow me to put it on public, it is still on fundamental phase to make e-commerce website.
 if it is unavailable to download, please refer below,
 Thank you :)
@@ -10,7 +11,7 @@ Ecommerce portal for cosmetic
 4. Inventory syatem✅ - database linked with admin acc and homepage product listing (limited to only 3 until further meeting)
 5. Advertisement - only made UI static, admin xde control to change lagi unless hardcode (require amendment, till further meeting)
 6. Reports n statistic - not yet, database x lengkap or database still incomplete with insufficient data,  should be available in admin dashboard but on hold (apexchart)
-7. 
+
 ![image](https://github.com/hielfarithsuffri/Cosmetic-git/assets/169738906/371f3b77-954a-4f8d-9119-278650268f31)
 main UI homepage
 
