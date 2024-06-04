@@ -1,7 +1,6 @@
-Note: Project on hold, pending with consultant to intergrate with SEO (OpenCart)
-this is my current project where my boss allow me to put it on public, it is still on fundamental phase to make e-commerce website.
+This is my current project where my boss allow me to put it on public, it is still on fundamental phase to make e-commerce website.
 if it is unavailable to download, please refer below,
-Thank you :)
+Thank you. Note: Project on hold, pending with consultant to intergrate with SEO (OpenCart).
 
 
 Ecommerce portal for cosmetic
